@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+
+<body class="page-body">
   <header class="main-header">
     <div class="container">
       <img class="main-header__logo" src="/source/img/logo-image.svg" alt="Логотип Cat Energy.">
@@ -16,7 +18,7 @@
         </button>
         <ul class="site-navigation__button">
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="">главная</a>
+            <a class="site-navigation__link" href="/source/index.html">главная</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="">каталог продукции</a>
@@ -28,5 +30,34 @@
       </nav>
     </div>
   </header>
+  <main main-form>
+    <h1 class="form-title">Подбор программы</h1>
+    <p class="form-text">Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+    <form action="">
+      <fieldset>
+        <legend class="visually-hidden">данные животного</legend>
+        <label for="nickname">ИМЯ:*
+          <input type="text" placeholder="Барсик" id="nickname" required>
+        </label>
+        <label for="weight">Вес (кг):*
+          <input type="number" name="weight" id="weight" placeholder="7" required>
+        </label>
+        <label for="age">Возраст (лет):
+          <input type="number" name="age" id="age" placeholder="7" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend class="vissually-hidden">Выбор программы</legend>
+        <input type="radio" name="weight" id="weight-loss"  value="weight-loss" checked>
+        <label for="weight-loss">Похудение</label>
+        <input type="radio" name="weight" id="weight-gain" value="weight-gain">
+        <label for="weight-gain">Набор массы</label>
+        <input type="radio" name="weight" id="advice" value="advice">
+        <label for="advice">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+    </form>
+  </main>
 </body>
+
 </html>
