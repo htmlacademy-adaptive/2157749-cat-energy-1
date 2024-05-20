@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container">
-      <a href="/source/index.html">
-        <img class="main-header__logo" src="/source/img/logo-image.svg" alt="Логотип Кэт энерджи.">
-        <img class="main-header__text" src="/source/img/logo-text.svg" alt="Надпись на английском: Cat Energy.">
+      <a href="index.html">
+        <img class="main-header__logo" src="img/logo-image.svg" alt="Логотип Кэт энерджи.">
+        <img class="main-header__text" src="img/logo-text.svg" alt="Надпись на английском: Cat Energy.">
       </a>
       <nav class="main-navigation site-navigation">
         <button class="site-navigation__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="site-navigation__button">
+        <ul class="site-navigation__list">
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="/source/index.html">главная</a>
+            <a class="site-navigation__link" href="index.html">главная</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">каталог продукции</a>
+            <a class="site-navigation__link" href="catalog.html" aria-current="page">каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="/source/form.html">подбор программы</a>
+            <a class="site-navigation__link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -34,66 +36,99 @@
     <h1 class="catalog-title">Каталог продукции</h1>
     <section class="catalog-cards">
       <h2 class="visually-hidden">Карточки товара</h2>
-      <ul class="catalog-cards__list">
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/pro500-chicken.png" alt="Корм для кошек Кэт энерджи про 500г с курицей">
+      <div class="catalog-cards__wrapper">
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/pro500-chicken.png" alt="Корм для кошек Кэт энерджи про 500г с курицей">
           <h3 class="card-title">Cat Energy PRO500 г</h3>
-          <p class="card-discription"><span>Масса</span><span>500 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Курица</span></p>
-          <p class="card-discription"><span>Цена</span><span>700 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/pro1000-chicken.png" alt="Корм для кошек Кэт энерджи про 1000г с курицей">
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>500 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Курица</span></li>
+            <li class="card-discription"><span>Цена</span><span>700 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/pro1000-chicken.png" alt="Корм для кошек Кэт энерджи про 1000г с курицей">
           <h3 class="card-title">Cat Energy PRO1000 г</h3>
-          <p class="card-discription"><span>Масса</span><span>1000 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Курица</span></p>
-          <p class="card-discription"><span>Цена</span><span>1000 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/pro500-fish.png" alt="Корм для кошек Кэт энерджи про 500г с рыбой">
-          <h3 class="card-title">Cat Energy PRO500 г</h3>
-          <p class="card-discription"><span>Масса</span><span>500 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Рыба</span></p>
-          <p class="card-discription"><span>Цена</span><span>700 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/pro1000-fish.png" alt="Корм для кошек Кэт энерджи про 1000г с рыбой">
-          <h3 class="card-title">Cat Energy PRO1000 г</h3>
-          <p class="card-discription"><span>Масса</span><span>1000 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Рыба</span></p>
-          <p class="card-discription"><span>Цена</span><span>1000 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/slim500-buckwheat.png" alt="Корм для кошек Кэт энерджи слим 500г с гречкой" >
-          <h3 class="card-title">Cat Energy SLIM500 г</h3>
-          <p class="card-discription"><span>Масса</span><span>500 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Гречка</span></p>
-          <p class="card-discription"><span>Цена</span><span>400 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item"><img class="card-image" src="/source/img/slim1000-buckwheat.png" alt="Корм для кошек Кэт энерджи слим 1000г с гречкой" >
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>1000 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Курица</span></li>
+            <li class="card-discription"><span>Цена</span><span>1000 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/pro500-fish.png" alt="Корм для кошек Кэт энерджи про 500г с рыбой">
+            <h3 class="card-title">Cat Energy PRO500 г</h3>
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>500 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Рыба</span></li>
+            <li class="card-discription"><span>Цена</span><span>700 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/pro1000-fish.png" alt="Корм для кошек Кэт энерджи про 1000г с рыбой">
+            <h3 class="card-title">Cat Energy PRO1000 г</h3>
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>1000 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Рыба</span></li>
+            <li class="card-discription"><span>Цена</span><span>1000 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/slim500-buckwheat.png" alt="Корм для кошек Кэт энерджи слим 500г с гречкой">
+            <h3 class="card-title">Cat Energy SLIM500 г</h3>
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>500 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Гречка</span></li>
+            <li class="card-discription"><span>Цена</span><span>400 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+            <a href="#">
+              <img class="card-image" src="img/slim1000-buckwheat.png"
+              alt="Корм для кошек Кэт энерджи слим 1000г с гречкой">
+              <h3 class="card-title">Cat Energy SLIM1000 г</h3>
+            </a>
           <h3 class="card-title">Cat Energy SLIM1000 г</h3>
-          <p class="card-discription"><span>Масса</span><span>1000 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Гречка</span></p>
-          <p class="card-discription"><span>Цена</span><span>700 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-        <li class="catalog-cards__item">
-          <img class="card-image" src="/source/img/slim500-rise.png" alt="Корм для кошек Кэт энерджи слим 500г с рисом">
-          <h3 class="card-title">Cat Energy slim500 г</h3>
-          <p class="card-discription"><span>Масса</span><span>500 г</span></p>
-          <p class="card-discription"><span>Вкус</span><span>Рис</span></p>
-          <p class="card-discription"><span>Цена</span><span>500 ₽</span></p>
-          <button type="button">заказать</button>
-        </li>
-      </ul>
-      <p class="catalog-cards__text-big">Показать еще 100500 товаров</p>
-      <p class="catalog-cards__text-small">На самом деле вкусов гораздо больше!</p>
-      <button class="catalog-cards__button" type="button">показать все</button>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>1000 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Гречка</span></li>
+            <li class="card-discription"><span>Цена</span><span>700 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <article class="catalog-cards__item">
+          <a href="#">
+            <img class="card-image" src="img/slim500-rise.png" alt="Корм для кошек Кэт энерджи слим 500г с рисом">
+            <h3 class="card-title">Cat Energy slim500 г</h3>
+          </a>
+          <ul>
+            <li class="card-discription"><span>Масса</span><span>500 г</span></li>
+            <li class="card-discription"><span>Вкус</span><span>Рис</span></li>
+            <li class="card-discription"><span>Цена</span><span>500 ₽</span></li>
+          </ul>
+          <a class="button" href="#">заказать</a>
+        </article>
+        <div>
+          <p class="catalog-cards__text-big">Показать еще 100500 товаров</p>
+          <p class="catalog-cards__text-small">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="catalog-cards__button">показать все</a>
+        </div>
+      </div>
     </section>
     <section class="additional-products">
       <h2 class="section-title">Дополнительные товары</h2>
@@ -102,42 +137,42 @@
           <h3 class="additional-products__title">Сахарозаменитель</h3>
           <span>1 упаковка (100 г)</span>
           <span>200 ₽</span>
-          <button class="button" type="button">заказать</button>
+          <a class="button" href="#">заказать</a>
         </li>
         <li class="additional-products__item">
           <h3 class="additional-products__title">питьевая вода</h3>
           <span>5 литров</span>
           <span>50 ₽</span>
-          <button class="button" type="button">заказать</button>
+          <a class="button" href="#">заказать</a>
         </li>
         <li class="additional-products__item">
           <h3 class="additional-products__title">молоко</h3>
           <span>1 литр</span>
           <span>100 ₽</span>
-          <button class="button" type="button">заказать</button>
+          <a class="button" href="#">заказать</a>
         </li>
         <li class="additional-products__item">
           <h3 class="additional-products__title">витамины</h3>
           <span>1 упаковка (30 г)</span>
           <span>300 ₽</span>
-          <button class="button" type="button">300 ₽</button>
+          <a class="button" href="#">заказать</a>
         </li>
       </ul>
 
-    <div class="additional-promo">
-      <p class="additional-text">Закажите все и получите чехол для кота в подарок!</p>
-    </div>
-  </section>
+      <div class="additional-promo">
+        <p class="additional-text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="main-footer__contacts">
       <p class="main-footer__text main-footer__text--bold">приглашаем к сотрудничеству дилеров!</p>
       <p class="main-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img src="/source/img/map.png" alt="Схема проезда.">
+      <img src="img/map.png" alt="Схема проезда.">
     </div>
     <div class="main-footer__wrapper">
-      <img src="/source/img/logo-text.svg" alt="">
+      <img src="img/logo-text.svg" alt="">
       <ul class="main-footer__social-list">
         <li class="main-footer__socal-item">
           <a href="" class="main-footer__social-link">
@@ -158,11 +193,11 @@
       <div class="main-footer__copyright">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="main-footer__copyright-text">HTML Academy</p>
-          <img class="main-footer__copyright-image" src="/source/img/html-academy.svg" alt="HTML Academy">
+          <img class="main-footer__copyright-image" src="img/html-academy.svg" alt="HTML Academy">
         </a>
       </div>
     </div>
   </footer>
 </body>
-</html>
 
+</html>
