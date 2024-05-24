@@ -1,7 +1,9 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сергей Орешкин](https://up.htmlacademy.ru/adaptive-individual/1/user/2157749).
+* Наставник: [Алесандр Зиновьев](https://htmlacademy.ru/profile/id198751)
 * Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
+
 
 ---
 
